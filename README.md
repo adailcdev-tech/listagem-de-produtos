@@ -1,84 +1,144 @@
-# Meu Estudo de Caso — Rotas e Consumo de API
+# 📦 Estudo de Caso — Aplicação Web + Mobile com Consumo de API
 
-Projeto de estudo dividido em duas partes: aplicação Web (React + Vite) e Mobile (React Native + Expo). O objetivo é listar produtos, navegar entre telas/rotas e consumir uma API REST.
+Este repositório contém o estudo de caso desenvolvido para a disciplina de **Desenvolvimento Profissional**, utilizando **React + Vite** na versão Web e **React Native + Expo** na versão Mobile.  
+Ambas as aplicações consomem uma **API REST de produtos**, implementam **rotas**, **componentes reutilizáveis** e seguem boas práticas de desenvolvimento.
 
-Estrutura esperada:
+---
+
+## 🗂️ Estrutura do Repositório
 
 ```
 /meu-estudo-caso
-├── web/
-└── mobile/
+│
+├── web/       → Aplicação Web (React + Vite)
+└── mobile/    → Aplicação Mobile (React Native + Expo)
 ```
 
-Web (React + Vite):
-- Rotas: `/` (lista de produtos) e `/produto/:id` (detalhes)
-- Bibliotecas: React, Vite, React Router, Axios, React Bootstrap
+---
 
-Mobile (Expo + React Native):
-- Telas: Tela inicial (lista), Tela de detalhes
-- Bibliotecas: Expo, React Navigation, Axios, (opcional) React Native Paper
+# 🌐 Aplicação Web — React + Vite
 
-Instalação e execução
+## 🔧 Tecnologias Utilizadas
+- React  
+- Vite  
+- React Router DOM  
+- Axios  
+- React Bootstrap  
 
-Web:
+## 🎯 Funcionalidades
+- Página inicial listando os produtos  
+- Página de detalhes do produto  
+- Navegação entre rotas  
+- Consumo da API REST de produtos  
 
-1. Entre na pasta `web`:
+## 🔗 API Utilizada
+Documentação oficial:  
+https://proweb.leoproti.com.br/swagger-ui/index.html
 
+---
+
+## 🚀 Deploy no Vercel (Web)
+Passos básicos:
+1. Criar conta no Vercel  
+2. Conectar ao GitHub  
+3. Selecionar o diretório `/web`  
+4. Confirmar build (Vite)  
+5. Publicar  
+
+---
+
+# 📱 Aplicação Mobile — React Native + Expo
+
+## 🔧 Tecnologias Utilizadas
+- React Native  
+- Expo  
+- React Navigation  
+- Axios  
+- React Native Paper (opcional)  
+
+## 🎯 Funcionalidades
+- Tela inicial com navegação para produtos  
+- Tela de detalhes do produto  
+- Consumo da mesma API da versão Web  
+- Navegação com React Navigation  
+
+---
+
+# 🛠️ Como Executar o Projeto
+
+## 📘 1. Clonar o repositório
+```bash
+git clone https://github.com/SEU_USUARIO/meu-estudo-caso.git
+cd meu-estudo-caso
 ```
+
+---
+
+## 🌐 2. Rodar a Aplicação Web
+```bash
 cd web
-```
-
-2. Instale dependências:
-
-```
 npm install
-```
-
-3. Rode em desenvolvimento:
-
-```
 npm run dev
 ```
 
-Mobile (Expo):
+A aplicação será iniciada em:  
+http://localhost:5173/
 
-1. Entre na pasta `mobile`:
+---
 
-```
+## 📱 3. Rodar a Aplicação Mobile
+```bash
 cd mobile
-```
-
-2. Instale dependências (use `npm` ou `yarn`):
-
-```
 npm install
+npx expo start
 ```
 
-3. Rode o projeto Expo:
+Você poderá:
+- Escanear o QR Code com o aplicativo Expo Go  
+- Rodar em um emulador Android  
+- Rodar em um emulador iOS (no Mac)  
 
+---
+
+# 🧭 Rotas Implementadas
+
+## 🌐 Web — React Router DOM
+| Rota | Descrição |
+|------|-----------|
+| `/` | Listagem de produtos |
+| `/produto/:id` | Detalhes do produto |
+
+## 📱 Mobile — React Navigation
+| Tela | Descrição |
+|------|-----------|
+| `Home` | Tela inicial com menu de produtos |
+| `Detalhes` | Exibe o produto selecionado |
+
+---
+
+# 📤 Envio para o GitHub
+```bash
+git init
+git add .
+git commit -m "Entrega do estudo de caso"
+git remote add origin https://github.com/SEU_USUARIO/meu-estudo-caso.git
+git push -u origin main
 ```
-npm start
-```
 
-API de Produtos
+---
 
-A API usada como exemplo possui documentação Swagger em:
+# 📚 Materiais de Apoio
 
-https://proweb.leoproti.com.br/swagger-ui/index.html
+- React Router DOM (Web)  
+  https://www.youtube.com/watch?v=AZyfp0tbGJ4&t=1288s
 
-Os endpoints usados no scaffold são exemplares: `/produtos` e `/produtos/{id}` — verifique os nomes e rotas corretas na documentação da API.
+- React Navigation (Mobile)  
+  https://www.youtube.com/watch?v=iNewmFYHjIw
 
-Deploy (Web) — Vercel
+- Deploy com Vercel  
+  https://www.youtube.com/watch?v=e_92Fz99q18
 
-1. Crie conta no Vercel e conecte ao GitHub
-2. Selecione o repositório e a pasta `web/` como root do projeto
-3. Configure build command: `npm run build` e output: `dist` (Vite)
-4. Deploy e acesse o link gerado
+---
 
-Créditos e referências
-
-- React: https://react.dev/
-- Vite: https://vitejs.dev/
-- React Router DOM: https://reactrouter.com/
-- Expo: https://expo.dev/
-- Swagger (API): https://proweb.leoproti.com.br/swagger-ui/index.html
+# 👤 Autor
+**Adail Cipriano Neto**
